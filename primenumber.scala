@@ -1,25 +1,30 @@
 object primenumber{
 	
-	var i:Int=0;
-
-	def prime(a:Int):Boolean = {
-		if(i==1){
+	def prime(a:Int,b:Int=2):Boolean = {
+		if(a==2){
 			return true;
 			}
-		else if(a%i==0){
+
+		else if(a<2){
+			return false;
+			}
+
+		else if(a%b==0){
 			return false;;
 			}
+
+		else if(b*b>a){
+			return true;
+			}
+
 		else{
-			i=i-1;
-			prime(a);
+			return prime(a,b+1);
 			}
 		}	
 
 	def main(arg: Array[String]){
-		println("Enter Number   ");
-		val c=scala.io.StdIn.readInt();
-		i=c/2;
-		println(prime(c));
+		println(prime(5));
+		println(prime(8));
 		}
 
 }
