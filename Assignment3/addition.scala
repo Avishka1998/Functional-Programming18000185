@@ -5,8 +5,8 @@ object addition{
 			}
 
 		else{
-			var res:Int = n+addition(n-1);
-			return res;
+			var res:Int = n + addition(n-1);
+			return res; 
 			}
 		}
 
