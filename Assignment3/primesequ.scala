@@ -39,7 +39,7 @@ object primesequ{
 	}
 			
 	def main(args: Array[String]){
-			println(primeseq(20));
+			println(primeseq(10));
 			}
 
 }
