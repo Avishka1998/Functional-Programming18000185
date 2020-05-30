@@ -9,7 +9,7 @@ object primenumber{
 			return false;
 			}
 
-		else if(a%b==0){
+		else if(a%b == 0){
 			return false;;
 			}
 
