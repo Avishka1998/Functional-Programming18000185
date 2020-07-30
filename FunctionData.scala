@@ -41,6 +41,7 @@ object FunctionaData{
 
 		var bank:List[Account]=List(ac1,ac2,ac3)
 
-		val overdraft = (b:List[Account]) => b.filter(_.balance<0)
+		val overdraft = (b:List[Account]) => b.filter(_.balance<0)				//returning a list of accounts that has minus balances
+   	 	val total = (b:List[Account]) => b.reduce((x:Account,y:Account) => new Account(0,x.balance+y.balance))   //returning an Account contains total balance
    }
 }
